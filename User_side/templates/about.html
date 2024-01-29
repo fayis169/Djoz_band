@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="DJoz Template">
+    <meta name="keywords" content="DJoz, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DJoz | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/nowfont.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/rockville.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header header--normal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li><a href="{% url 'u_home' %}">Home</a></li>
+                                <li><a href="{% url 'all_band' %}">All Bands</a></li>
+                                <li><a href="{% url 'music' %}">Music</a></li>
+<!--                                <li><a href="./videos.html">Videos</a></li>-->
+<!--                                <li><a href="./about.html">About</a></li>-->
+<!--                                <li><a href="./blog.html">Blog</a></li>-->
+<!--                                <li><a href="./blog-details.html">Blog Details</a></li>-->
+                                <li class="active"><a href="#">About</a></li>
+                                <li><a href="{% url 'u_contact' %}">Contact</a></li>
+                            </ul>
+                        </nav>
+<!--                        <div class="header__right__social">-->
+<!--                            <a href="#"><i class="fa fa-facebook"></i></a>-->
+<!--                            <a href="#"><i class="fa fa-twitter"></i></a>-->
+<!--                            <a href="#"><i class="fa fa-instagram"></i></a>-->
+<!--                            <a href="#"><i class="fa fa-dribbble"></i></a>-->
+<!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="#"><i class="fa fa-home"></i> Home</a>
+                        <span>About</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Map Begin -->
+<!--    <div class="map">-->
+<!--        <div class="container">-->
+<!--            <iframe-->
+<!--                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.5524090066037!2d-71.10245469994108!3d42.47980730490846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3748250c43a43%3A0xe1b9879a5e9b6657!2sWinter%20Street%20Public%20Parking%20Lot!5e0!3m2!1sen!2sbd!4v1577299251173!5m2!1sen!2sbd"-->
+<!--                height="585" style="border:0;" allowfullscreen=""></iframe>-->
+<!--        </div>-->
+<!--    </div>-->
+    <!-- Map End -->
+
+    <!-- Contact Section Begin -->
+    <section class="about spad" style="margin-top: 100px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about__pic">
+                        <img src="/static/img/about/about.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__text">
+                        <div class="section-title">
+                            <h2>DJoz</h2>
+                            <h1>About me</h1>
+                        </div>
+                        <p>Welcome to the sonic universe of Djoz, where passion meets rhythm, and melodies weave tales.
+                            We are a collective on a mission to redefine the boundaries of sound and emotion.
+                        </p>
+                         <h5 style="font-weight: 900; line-height: 1.2;">Our Mission:</h5><br>
+                        <p>At Djoz, we believe in the power of music to inspire, heal, and connect.
+                            Our mission is to create a space where listeners can immerse themselves in the emotional landscapes we paint with sound. Through our music, we aim to build a community that shares in the joy of discovery and the catharsis of expression.
+                        </p>
+                        <h5 style="font-weight: 900; line-height: 1.2;">Our Aim:</h5><br>
+                        <p>We are  mainly focusing on fresh band teams for their reach and development.
+                        </p>
+                        <a href="{% url 'u_contact' %}" class="primary-btn">CONTACT US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- About Pic Begin -->
+    <div class="about-pic">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 p-0">
+                            <img src="/static/img/about/ap-1.jpg" alt="">
+                            <img src="/static/img/about/ap-2.jpg" alt="">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 p-0">
+                            <img src="/static/img/about/ap-3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8 p-0">
+                            <img src="/static/img/about/ap-4.jpg" alt="">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 p-0">
+                            <img src="/static/img/about/ap-5.jpg" alt="">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 p-0">
+                            <img src="/static/img/about/ap-6.jpg" alt="">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 p-0">
+                            <img src="/static/img/about/ap-7.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Pic End -->
+
+    <!--    end content-->
+    <section class="about-services spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title center-title">
+                        <h2>WHERE DO WE PLAY</h2>
+                        <h1>Best service</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <a href="{% url 'filter' cat='Wedding' %}">
+                    <div class="about__services__item">
+                        <div class="about__services__item__pic set-bg" data-setbg="/static/img/services/as-1.jpg" style="background-image: url(&quot;img/services/as-1.jpg&quot;);">
+                            <div class="icon">
+                                <img src="/static/img/services/as-icon-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="about__services__item__text">
+                            <h4>Wedding</h4>
+                            <p>To the bride and groom, may we wish you health. Feel the heart beats</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <a href="{% url 'filter' cat='Clubs and Bar' %}">
+                    <div class="about__services__item">
+                        <div class="about__services__item__pic set-bg" data-setbg="/static/img/services/as-2.jpg" style="background-image: url(&quot;img/services/as-2.jpg&quot;);">
+                            <div class="icon">
+                                <img src="/static/img/services/as-icon-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="about__services__item__text">
+                            <h4>Clubs and bar</h4>
+                            <p>Dancing and other entertainment. Free your mind and tending to calm the emotions and relieve stress</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <a href="{% url 'filter' cat='DJ Lessons' %}">
+                    <div class="about__services__item">
+                        <div class="about__services__item__pic set-bg" data-setbg="/static/img/services/as-3.jpg" style="background-image: url(&quot;img/services/as-3.jpg&quot;);">
+                            <div class="icon">
+                                <img src="/static/img/services/as-icon-3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="about__services__item__text">
+                            <h4>DJ lessons</h4>
+                            <p>Beatmatching and mixing and the ability to read the crowd and manage the energy on the dancefloor</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--    end content-->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer footer--normal spad set-bg" data-setbg="/static/img/footer-bg.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__address">
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <p>Phone</p>
+                                {% for i in data %}
+                                <h6>{{i.mob}}</h6>
+                                {% endfor %}
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <p>Email</p>
+                                {% for i in data %}
+                                <h6>{{i.email}}</h6>
+                                {% endfor %}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 col-md-6">
+                    <div class="footer__social">
+                        <h2>DJoz</h2>
+                        <div class="footer__social__links">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6">
+                    <div class="footer__newslatter">
+                        <h4>Stay With me</h4>
+                        <form action="#">
+                            <input type="text" placeholder="Contact Us">
+                            <button type="submit"><i class="fa fa-send-o"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+    <script src="/static/js/jquery.nicescroll.min.js"></script>
+    <script src="/static/js/jquery.barfiller.js"></script>
+    <script src="/static/js/jquery.countdown.min.js"></script>
+    <script src="/static/js/jquery.slicknav.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/main.js"></script>
+
+    <!-- Music Plugin -->
+    <script src="/static/js/jquery.jplayer.min.js"></script>
+    <script src="/static/js/jplayerInit.js"></script>
+</body>
+
+</html>

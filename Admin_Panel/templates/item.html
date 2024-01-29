@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% extends 'a_home.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="grid-margin stretch-card" style="width: 1300px; margin-left:-100px; margin-top: 100px;">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Band Details</h4>
+<!--                    <p class="card-description"> Add class <code>.table-hover</code>-->
+                    </p>
+                    <div class="table-responsive">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>Band Name</th>
+                            <th>Year</th>
+                            <th>Mobile</th>
+                            <th>Email</th>
+                            <th>Category</th>
+                            <th>Image</th>
+                            <th>Audio</th>
+                            <th>Attach file</th>
+                            <th>About</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        {% for i in data %}
+                         <tr>
+                            <td>{{i.band_name}}</td>
+                            <td>{{i.year}}</td>
+                            <td>{{i.mobile}}</td>
+                            <td>{{i.email}}</td>
+                            <td>{{i.cat}}</td>
+                            <td><img src="{{i.image.url}}"></td>
+                            <td>
+                                <audio controls>
+<!--                                    <source src="horse.ogg" type="audio/ogg">-->
+                                    <source src="{{i.audio.url}}" type="audio/mp3">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                            </td>
+                            <td><a href="{{i.link}}"><button type="submit" class="btn btn-sm btn-primary mr-2"> Click Here </button></a></td>
+                            <td>{{i.comment}}</td>
+<!--                             <td>-->
+<!--                                 <form action="">-->
+<!--                                     <button type="submit" class="btn btn-sm btn-primary mr-2"> Edit </button>-->
+<!--                                 </form>-->
+<!--                             </td>-->
+                             <td>
+                                 <form action="{% url 'delete_item' id=i.id %}">
+                                     <button type="submit" class="btn btn-sm btn-danger"> Delete </button>
+                                 </form>
+                             </td>
+                         </tr>
+                        {% endfor %}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!--{% if messages %}-->
+<!--    {% for i in messages %}-->
+<!--        {% if i.tags == 'warning' %}-->
+<!--            <script>-->
+<!--                swal('{{i}}', '', 'warning');-->
+<!--            </script>-->
+<!--        {% elif i.tags == 'error' %}-->
+<!--            <script>-->
+<!--                swal('{{i}}', '', 'error')-->
+<!--            </script>-->
+<!--        {% elif i.tags == 'success' %}-->
+<!--            <script>-->
+<!--                swal('{{i}}', '', 'success')-->
+<!--            </script>-->
+<!--        {% else %}-->
+<!--            <script>-->
+<!--                swal('{{i}}', '', 'info')-->
+<!--            </script>-->
+<!--        {% endif %}-->
+<!--    {% endfor %}-->
+<!--{% endif %}-->
+
+
+</body>
+</html>
+{% endblock %}
