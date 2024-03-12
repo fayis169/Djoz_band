@@ -117,7 +117,7 @@ def booking(request):
         from_email = 'muhammedfayiskk169@gmail.com'
         recipient_list=[be]
         send_mail(subject, messages, from_email, recipient_list, fail_silently=False)
-        return redirect(u_home)
+        return redirect(all_band)
 
 def savecontact(request):
     if request.method == "POST":
